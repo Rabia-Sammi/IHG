@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@font-face {
+    font-family: 'DinNext';
+    src: url(./fonts/DINNextLTProRegular.woff2) format('woff');
+}
+
+
+
+a{text-decoration: none; letter-spacing: 1px;}
+body{font-family: "DinNext"; letter-spacing: 1px;}
+li { list-style-type: none;}
+
+/* Header */
+
+.header{font-family: "DinNext"; padding-bottom: 10px;}
+.header .row{ align-items: center;}
+.header .nav-desk{ display: flex; justify-content:end; align-items: center; font-family: "Apercu";padding-top: 10px;}
+.header .nav-desk ul li{ padding: 0px 20px;} 
+.header .nav-desk a{ font-family: "DinNext"; color: #0c1933; text-decoration: none; font-size: 16px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px;}
+.header .nav-desk a:hover{color: #ad0304;}
+.header .nav-btn {margin-left: 15px;}
+.header .nav-btn a{background-color: #ad0304; color: white; border: 2px solid white; padding: 10px 12px;}
+.header .nav-btn a:hover{background-color: white; border: 2px solid #ad0304;}
+
+.header .sm-menu .sub-menu{ background-color: white;}
+.header .sm-menu .sub-menu li{padding-top: 20px; border: none;}
+.header .sm-menu ul.sub-menu{margin-top: 30px!important; padding:5px; padding-bottom: 20px; border-top: 2px solid #ad0304;}
+
+
+.header .nav-mob{display: none;}
+.header .nav-mob button{ font-size: 28px; color: black; background-color: white; padding: 10px 20px; border: none; margin-top: 20px;}
+.header .nav-mob ul{padding-left: 20px; margin-top: 30px;}
+.header .nav-mob ul li{padding-bottom: 15px;}
+.header .nav-mob ul li a{color:black; font-size: 19px; text-decoration: none;}
+.header .nav-mob ul li a:hover{ color: #015981;}
+.header .nav-mob ul li a span i{padding-right: 5px; color: #ad0304;}
+.header .nav-mob .sm-menu .sub-menu li a{font-size: 15px;}
+.header .nav-mob ul li a.has-submenu{display: flex; justify-content: space-between;}
+
+.header .offcanvas{background-color: white; width: 85%;}
+.header .offcanvas .btn-x{ position: absolute; right: 0; margin: 0; background-color: transparent; color: black; }
+
+.header .nav-mob .sub-arrow{size:40px ;}
+.header .nav-mob .sub-arrow::before {font-family: 'Fontawesome'; font: var(--fa-font-solid); content: '\f107';}
+.header .nav-mob a.btn-mobmenu{background-color: #ad0304; color: white; display: inline-block; padding: 10px; margin-bottom: 40px; text-decoration: none;}
+
+.header .nav-mob .contact-info p{ border-bottom:  3px solid #ad0304; font-weight: bold; padding-bottom: 20px; font-size: 18px; padding-bottom: 5px; }
+
+/* SM MENU  */
+
+    @media (min-width: 768px) {
+
+        /* Switch to desktop layout
+        -----------------------------------------------
+        These transform the menu tree from
+        collapsible to desktop (navbar + dropdowns)
+        -----------------------------------------------*/
+        /* start... (it's not recommended editing these rules) */
+        .sm-menu ul{position:absolute;width:12em;}
+        .sm-menu li{float:left;}
+        .sm-menu.sm-rtl li{float:right;}
+        .sm-menu ul li,.sm-mytheme.sm-rtl ul li,.sm-mytheme.sm-vertical li{float:none;}
+        .sm-menu a{white-space:nowrap;}
+        .sm-menu ul a,.sm-mytheme.sm-vertical a{white-space:normal;}
+        .sm-menu .sm-nowrap > li > a,.sm-mytheme .sm-nowrap > li > :not(ul) a{white-space:nowrap;}
+        /* ...end */
+    
+    
+        /* Your rules to style the menu in desktop view here... */
+    }
+
+
+
+    .slider-sec .owl-carousel .owl-item img { height:100vh; filter: brightness(0.4);}
+    .slider-sec .owl-theme .owl-dots{ position: relative; bottom: 70px; }
+    .slider-sec .owl-theme .owl-dots .owl-dot span{width: 12px!important; height: 12px!important;}
+    .slider-sec .s-content{  color: white; position: absolute; top: 30%; z-index: 1000; left: 7%;}
+    .slider-sec .s-content h1{ font-family: "Playfair Display"; color: white; font-weight: 700; line-height: 6rem; font-size: 5rem; margin-bottom: 35px;}
+    .slider-sec .s-content p{ font-family: "DinNext"; font-size: 25px; letter-spacing: 1px;}
+    .slider-sec .s-content button{ background-color: transparent; padding: 14px 40px; color: white; border: 2px white solid; font-size: 20px; letter-spacing: 1px;}
+
+
+    .team-sec {padding-bottom: 50px;}
+    .team-sec img{ width: 100%; padding-right: 30px;}
+    .team-sec .t-img{position: relative;}
+    .team-sec iframe{ height:315px; position: absolute; bottom:0; left: 0; padding: 10px 10px 0px; background-color: #fff; z-index: 100;}
+    .team-sec h2{font-size: 36px; font-weight: bold; margin: 27px 0px;}
+    .team-sec h3{color: #e45908; font-size: 24px; padding-top: 40px;}
+    .team-sec p{font-size: 18px; color: rgb(109, 109, 109); margin-bottom: 2rem;}
+    .team-sec .t-btn a{ display: inline-block; border: 3px solid #004682; padding: 14px 40px; background-color: transparent; color: #004682;  font-size: 20px; letter-spacing: 1px; text-decoration: none;}
+    .team-sec .t-btn a:hover{ background-color: #004682; color: white; transition: all 0.5s;}
+
+    .proj-sec{padding-bottom: 60px;}
+    .proj-sec .sec-header{background-color: #0c1933; padding-bottom: 30px;}
+    .proj-sec .pre-heading{ color:#ae0404; font-size: 14px; font-weight: bold; letter-spacing: 1px;}
+    .proj-sec .pre-heading::before{ content: '\23AF'; position: relative; font-size: 40px; top: 7px; padding-right: 8px;}
+    .proj-sec .heading{display: flex; justify-content: space-between; }
+    .proj-sec h2{color: white; font-weight: bold; font-size: 35px;}
+    .proj-sec .red-btn{background-color: #ad0304; border-radius: 6px; padding: 15px 30px; color: white; font-weight: bold;}
+    .proj-sec .red-btn:hover{background-color: white; color: #ad0304; transition: all 0.5s ;}
+    
+    
+    .proj-sec .cards-sec{position: relative; height: 58vh;}
+    .proj-sec .cards-sec .overlay{height: 30vh; position: relative;background-color: #0c1933;}
+    .proj-sec .cards-sec .proj-cards {display: grid; grid-template-columns: auto auto auto auto; column-gap: 20px; position: relative; bottom: 210px;}
+    .proj-sec .cards-sec .proj-cards img{ width: 100%;}
+
+    .proj-sec .bottom-btn{display: none;}
+    
+    .proj-display{ text-align: center; padding-top: 50px;}
+    .proj-display h2{ color: #004682; text-transform: uppercase; font-weight: bold; padding-bottom: 30px; font-size: 32px;}
+    .proj-display h2 span{ color: #c37300}
+    .proj-display h3{ font-size: 20px; color:#004682; font-weight: bold; margin-right: 0px; text-align: left;}
+    .proj-display .pre-text{ display: inline-flex; font-size: 16px; border-bottom: 3px solid #ad0304; font-weight: bold; padding: 0px 14px; margin-bottom: 35px;}
+    .proj-display .row{ justify-content: center;}
+    .proj-display .item{border: 3px lightgrey solid; margin: 25px; padding: 30px; text-transform: uppercase; letter-spacing: 0px;}
+    .proj-display .item img{width: 300px; height: 370px; position: relative; right: 75px; top: -5px;}
+    .proj-display .cate{ color: #c37300; text-align: left; font-size: 14px; font-weight: bold; margin-bottom: 6px; margin-top: 10px;}
+    .proj-display .center-item{background-color: #0c1933; border-color: #0c1933;}
+    .proj-display .center-item h3{color: white;}
+
+    
+
+
+    .blog{ background-color: #0c1933; text-align: center; padding: 40px 0px; letter-spacing: 2px;}
+    .blog h2{color: white; font-weight: bold;}
+    .blog h2 span{color: #c37300;}
+    .blog p{color: white;}
+    .blog .card{padding: 20px;}
+    .blog .card .card-body h2{color: #ad0304; font-size: 24px; text-align: left;}
+    .blog .card .card-body p{ text-align: left; letter-spacing: 0px; font-size: 18px; color: rgb(49, 49, 49); font-size: 17px;}
+    .blog .card .card-btn{text-align: left; margin-left: 13px;}
+    .blog .card .card-btn a {border: 2px solid #c37300; color: black; font-weight: bold; border-radius: 5px; padding: 7px 18px; display: inline-flex;}
+    .blog .card .card-btn a:hover{ background-color: #c37300; color: white; transition: all 0.5s;}
+    
+    .footer{background-color: #ad0304; color: white; padding: 10px;}
+    .footer .row{justify-content: space-between;}
+    .footer a{color: white; padding:0px 10px;}
+
+
+
+    @media only screen and (max-width: 992px){
+        .header .nav-desk{display: none;}
+        .header .nav-btn{display: none;}
+        .header .nav-mob{display: block;}
+        .header .sm-menu ul.sub-menu{border: none; margin: 0!important; padding: 0;}
+        
+        .slider-sec .s-content{top: 25%}
+        .slider-sec .owl-carousel .owl-item img { height:90vh}
+        .slider-sec .s-content h1{font-size: 55px; line-height: 5rem;}
+        .slider-sec .s-content button {padding: 15px}
+        .team-sec iframe{ height:150px; width: 150px;}
+        .team-sec img{ padding: 0px;}
+        .team-sec .t-btn{ display: flex; justify-content: center;}
+        .proj-sec .sec-header{height: 100%;}
+        .proj-sec .heading{display: block; padding-bottom: 25px;}
+        .proj-sec .heading .red-btn{display: none;}
+        .proj-sec .bottom-btn {display: flex; justify-content: center;}
+        
+        .proj-sec .cards-sec{position:initial; height: 100%;}
+        .proj-sec .cards-sec .overlay{display: none;}
+        .proj-sec .cards-sec .proj-cards{grid-template-columns:auto; row-gap: 20px; background-color: white; padding-top: 0px; position: initial;}
+        
+        .proj-display{ padding-top: 20px;}
+        .proj-display .item img { width: 100%; right: 0;}
+        .blog .row{--bs-gutter-y:1rem;}
+        
+    }
+    @media (min-width: 1400px){
+        .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl 
+            {max-width: 1450px;}
+        }
+
+
+        
